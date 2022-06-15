@@ -1,13 +1,14 @@
 import React from 'react';
 import * as C from './styles';
 
-const ResumeItem = () => {
+const ResumeItem = ({ tittle, Icon, value}) => {
     return (
         <C.Container>
             <C.Header>
-                <C.HeaderTittle>Teste</C.HeaderTittle>
+                <C.HeaderTittle>{ tittle }</C.HeaderTittle>
+                <Icon />
             </C.Header>
-            <C.Total>1000</C.Total>
+            <C.Total>{ value }</C.Total>
         </C.Container>
     )
 };
